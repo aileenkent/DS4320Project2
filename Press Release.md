@@ -10,3 +10,4 @@ The US government collective spend billions a year on wildfire management, but c
 This project uses historical data around fire incidents to build a model that enables the size and containment duration of a fire to be predicted right at its start. This means that resources can be moved around more accurately to fires that will be destructive and need the resources.
 
 ## Chart:
+![chart showing the predicted vs actual](predicted_vs_actual.png)
