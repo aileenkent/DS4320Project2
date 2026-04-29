@@ -13,10 +13,10 @@ sbx3sw
 ### DOI:
 
 ### Press Release:
-[link]
+[link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Press%20Release.md)
 
 ### Pipeline:
-[link]
+[link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Pipeline/ds4320pipeline.ipynb)
 
 ### License: 
 
@@ -37,7 +37,7 @@ Wildfires are some of the most destructive natural disasers. Many places in the 
 The refinment was made to decide what exactly about wildfire risk should be looked into. There are many different aspects of wildfire risk that could be explored, including what areas are at high risk for a wildfire to start or the direction of the wildfire. However it is not feasible to build an accurate model to cover every single aspect of wildfires. The size of the fire and containment duration were selected in order to have results that could help guide actions and focus on lowering the uncertainty of resource allocation during a wildfire. The goal was to provide some benefit to those who would be suffering or in dange from the wildfire and size and duration are the factors that determine how long people's lives are disrupted.
 
 ### Press Release Headline:
-**ML Model predict Wildfire size at Ignition, Gives Citical Hours to Pre-Position** [link]
+**ML Model predict Wildfire size at Ignition, Gives Citical Hours to Pre-Position** [link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Press%20Release.md)
 
 ## Domain Exposition
 
@@ -80,10 +80,10 @@ The source of the data is the USDA Forest Service Fire Program Analysis Fire-Occ
 
 | File | Description | Link |
 |------|-------------|------|
-| `ds4320extract.ipynb` | Reads the raw SQLite FPA FOD file, filters to CONUS records with valid geometry, exports one JSON document per fire incident | [link](https://github.com/aileenkent/DS4320Project2/blob/10b7392ed7752b4ea528fce943e8840bad8ba051/ds4320extract.ipynb) |
-| `ds4320fetch.ipynb` | Calls the Copernicus CDS API to download ERA5 daily reanalysis tiles for each year; samples grid cells at each fire's coordinates and discovery date | [link](https://github.com/aileenkent/DS4320Project2/blob/10b7392ed7752b4ea528fce943e8840bad8ba051/ds4320fetch.ipynb) |
-| `ds4320join.ipynb` | Merges fire records with weather covariates on (fire_id, date), adds computed fields (containment_days, size_class), and upserts documents into MongoDB Atlas | [link](https://github.com/aileenkent/DS4320Project2/blob/10b7392ed7752b4ea528fce943e8840bad8ba051/ds4320join.ipynb) |
-| `ds4320validate.ipynb` | Runs post-load validation: checks field completeness, flags outliers (runtime > 3 years, size < 0), and writes a quality report to `logs/` | [link](https://github.com/aileenkent/DS4320Project2/blob/10b7392ed7752b4ea528fce943e8840bad8ba051/ds4320validate.ipynb) |
+| `ds4320extract.ipynb` | Reads the raw SQLite FPA FOD file, filters to CONUS records with valid geometry, exports one JSON document per fire incident | [link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Data%20Creation/ds4320extract.ipynb) |
+| `ds4320fetch.ipynb` | Calls the Copernicus CDS API to download ERA5 daily reanalysis tiles for each year; samples grid cells at each fire's coordinates and discovery date | [link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Data%20Creation/ds4320fetch.ipynb) |
+| `ds4320join.ipynb` | Merges fire records with weather covariates on (fire_id, date), adds computed fields (containment_days, size_class), and upserts documents into MongoDB Atlas | [link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Data%20Creation/ds4320join.ipynb) |
+| `ds4320validate.ipynb` | Runs post-load validation: checks field completeness, flags outliers (runtime > 3 years, size < 0), and writes a quality report to `logs/` | [link](https://github.com/aileenkent/DS4320Project2/blob/7e6f7b14af0508bc3ed8e6161592e872f1e2edbd/Data%20Creation/ds4320validate.ipynb) |
 
 ### Bias Identification:
 Bias could be introducted into the data collection process in a few ways, but the primary concern for this datset is reporting bias. Fires in public land or very populated areas are more likely to be reported than those in say remot areas or solely on private land. There is also the concern of the sparser weather data in the years prior to 2000 becuase the data gaps in stations increasing uncertainty.
